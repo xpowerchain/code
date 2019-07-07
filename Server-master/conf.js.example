@@ -1,0 +1,14 @@
+const conf = {
+    'RPC_HOST':"http://47.93.160.183:8545",
+    'TOKEN_ADDRESS':'0x634d8185cc0712c11e2e3b5f2adb8a0c56e0803c',//代币合约地址
+    'ETH_TOKEN':'',
+    'MQTT_HOST':'39.107.158.137',
+    'MQTT_PORT':1883,
+    'MQTT_USERNAME':'test',
+    'MQTT_PASSWORD':'test',
+    'MQTT_PROTOCOL':'tcp'
+    'RPC_HOSTS':['http://39.107.158.137:8545','http://39.107.158.137:8546','http://39.107.158.137:8547']
+
+}
+
+module.exports = conf
