@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="友情提示："
+        android:textSize="@dimen/sp_18"
+        android:padding="@dimen/dp_20"/>
+    <TextView
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_fa83bb"
+        android:text="0k"
+        android:gravity="right"
+        android:textSize="@dimen/sp_18"
+        android:padding="@dimen/dp_20"/>
+</LinearLayout>

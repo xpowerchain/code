@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        applicationId "com.lunary.owerwallet"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 7
+        versionName "1.0.7"
+        multiDexEnabled true
+        //jks 密码 owerWallet
+        ndk{
+            abiFilters "armeabi-v7a","x86"
+        }
+        packagingOptions {
+            exclude "lib-main/libimagepipeline.so"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.+'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'org.web3j:core:3.3.1-android'
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.facebook.fresco:fresco:1.9.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
+    compile 'me.dm7.barcodescanner:zxing:1.8.4'
+    compile('com.mikepenz:materialdrawer:5.9.1@aar') {
+        transitive = true
+    }
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.8@aar'
+    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0'
+    compile 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+    compile 'com.lambdaworks:scrypt:1.4.0'
+    compile 'com.liulishuo.filedownloader:library:0.2.0'
+}

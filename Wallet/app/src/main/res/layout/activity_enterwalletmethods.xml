@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/js_images_landing_background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_220"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_32"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enterwalletmethods_str"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_15"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_19"/>
+
+    <Button
+        android:id="@+id/createwallet"
+        android:layout_width="@dimen/dp_265"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="@string/enterwalletmethods_createwallet"
+        android:background="@drawable/bg_enterwallet_button"/>
+    <Button
+        android:id="@+id/loadwallet"
+        android:layout_width="@dimen/dp_265"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="@string/enterwalletmethods_loadwallet"
+        android:background="@drawable/bg_enterwallet_button"/>
+
+</LinearLayout>
